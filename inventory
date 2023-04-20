@@ -1,0 +1,15 @@
+; -*-mode: ansible; coding: utf-8;-*-
+
+
+[loadbalancer]
+
+my-loadbalancer       ansible_host=44.213.118.82      ansible_port=22     ansible_user=ubuntu     ansible_ssh_private_key_file="~/Downloads/new_key.pem"
+
+
+[webservers] 
+
+my-application        ansible_host=54.81.157.88      ansible_port=22     ansible_user=ubuntu     ansible_ssh_private_key_file="~/Downloads/new_key.pem"
+
+
+[all:vars]
+ansible_ssh_pipelining=no
